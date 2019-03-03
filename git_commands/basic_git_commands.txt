@@ -1,0 +1,1 @@
+Basic Git Commands Required for Git Bash
