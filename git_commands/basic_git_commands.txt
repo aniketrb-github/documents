@@ -24,7 +24,9 @@ $ git push -u origin --al
 
 -- Initialize a new folder to pull a remote branch for first time
 $ git init
-$ git pull git@github.com:aniketrb-github/microservices.git
+$ git remote add origin git@github.com:aniketrb-github/microservices.git
+$ git pull origin master
+
 
 -- fatal: 'origin' does not appear to be a git repository
 -- This is typically because you have not set the origin alias on your Git repository.
@@ -35,5 +37,18 @@ $ git restore --staged pom.xml
 
 -- to see the recent commits done 
 $ git log
+-- TO revert your commit 
 $ git revert <your-commit-hash>
 -- If you enter the Vim editor, then follow: https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor
+
+
+-- To revert your latest commit(the top commit is reverted by-default each time this is done) 
+$ git reset --soft HEAD
+
+-- To reset the 2nd number 
+$ git reset --soft HEAD~2
+
+-- If you face the issue follow: https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+git fetch --all
+git reset --hard origin/master
+
