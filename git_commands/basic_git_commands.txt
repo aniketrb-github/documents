@@ -1,1 +1,39 @@
 Basic Git Commands Required for Git Bash
+
+
+git username: aniketrb-github
+
+-- Some SSH Path of a Remote GIT Repo
+SSH : git@github.com:aniketrb-github/spring_web.git
+
+-- To clone an existing Remote repo. to local
+$ git clone git@github.com:aniketrb-github/spring_web.git
+
+-- To set the credentials for a machine
+$ git config --global user.email "aniketbharsakale@gmail.com"
+$ git config --global user.name "aniketrb-github"
+
+-- Adding multiple files to stage area
+$ git add directoryParent/directoryChild/file.java directoryParent/file2.java 
+
+-- Defining your commit for the staged files
+$ git commit -m "type your specific commit message here"
+
+-- Pushing all your commits at once to remote branch
+$ git push -u origin --al
+
+-- Initialize a new folder to pull a remote branch for first time
+$ git init
+$ git pull git@github.com:aniketrb-github/microservices.git
+
+-- fatal: 'origin' does not appear to be a git repository
+-- This is typically because you have not set the origin alias on your Git repository.
+$ git remote add origin git@github.com:aniketrb-github/microservices.git
+
+-- removing the staged file from staged area into unstaged area
+$ git restore --staged pom.xml
+
+-- to see the recent commits done 
+$ git log
+$ git revert <your-commit-hash>
+-- If you enter the Vim editor, then follow: https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor
