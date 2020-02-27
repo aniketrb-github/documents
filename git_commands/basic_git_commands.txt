@@ -1,5 +1,43 @@
 Basic Git Commands Required for Git Bash
 
+- to revert a commit done(which is not pushed yet) from staging area
+--> git reset --soft HEAD@{1}
+
+You can unstage files from the index using
+--> git reset HEAD -- file1 file2 file3 . . .
+ex: git reset HEAD -- utility/.classpath utility/.project
+
+removes all/entire set of staged files
+--> git reset HEAD -- .
+
+If you need to remove all files under a directory (folder) from the staging area, use
+--> git reset HEAD -- <directoryName>
+ex: git reset HEAD -- utility/
+
+To clone an exisiting public repository
+--> git clone git@github.com:in28minutes/MockitoIn28Minutes.git
+
+--> git remote add origin "git@github.com:aniketrb-github/core_java.git"
+
+To pull the latest updates of the current branch
+--> git pull origin
+
+To know the current status of the Git Branch
+--> git status
+
+to push local code changes to branch
+--> git push -u origin --all
+
+stage the code changes
+--> git add <>
+
+commit the staged code changes
+--> git commit 
+
+https://www.hackerearth.com/challenges/test/code_ninja_2019_round1/?login=3d31915dec773f330b23a5d54e763101
+
+-------------------------------------
+
 
 git username: aniketrb-github
 
